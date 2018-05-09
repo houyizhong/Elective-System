@@ -19,7 +19,7 @@ class School(object):
         return The_Class(self.school_site,enter_course,enter_price,enter_cycle,enter_name)
 
 class Course(School):
-    def __init__(self,course_name,school_site,price,cycle):
+    def __init__(self,school_site,course_name,price,cycle):
         School.__init__(self,school_site)
         self.course = course_name
         self.price = price
